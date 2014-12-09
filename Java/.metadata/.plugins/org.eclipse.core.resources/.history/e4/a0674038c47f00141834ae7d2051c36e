@@ -1,0 +1,20 @@
+/**
+ * 
+ */
+package telesales.gui;
+
+/**
+ * @author rasgarbayli
+ *
+ */
+public class TelesalesGUI {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
