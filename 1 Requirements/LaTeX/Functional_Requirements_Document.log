@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2014.12.18)  18 DEC 2014 14:05
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2014.12.18)  18 DEC 2014 15:48
 entering extended mode
 **Functional_Requirements_Document.tex
 ("C:\GIT\Telesales\1 Requirements\LaTeX\Functional_Requirements_Document.tex"
@@ -819,16 +819,19 @@ Requested font "Verdana/I/OT:script=latn;language=DFLT;mapping=tex-text;" at 10
 
 [1] ("C:\GIT\Telesales\1 Requirements\LaTeX\Prod_objectives.tex")
 ("C:\GIT\Telesales\1 Requirements\LaTeX\Prod_usage.tex" [1])
-("C:\GIT\Telesales\1 Requirements\LaTeX\Prod_environment.tex" [2])
-("C:\GIT\Telesales\1 Requirements\LaTeX\Prod_functional_req.tex" [3])
-("C:\GIT\Telesales\1 Requirements\LaTeX\Prod_non_functional_req.tex" [4])
-("C:\GIT\Telesales\1 Requirements\LaTeX\Prod_data.tex" [5])
-("C:\GIT\Telesales\1 Requirements\LaTeX\Prod_test.tex" [6])
-("C:\GIT\Telesales\1 Requirements\LaTeX\Prod_system_model.tex" [7])
-("C:\GIT\Telesales\1 Requirements\LaTeX\Prod_gui.tex")
-("C:\GIT\Telesales\1 Requirements\LaTeX\Prod_glossary.tex" [8])
+("C:\GIT\Telesales\1 Requirements\LaTeX\Prod_environment.tex")
+("C:\GIT\Telesales\1 Requirements\LaTeX\Prod_functional_req.tex" [2])
+("C:\GIT\Telesales\1 Requirements\LaTeX\Prod_non_functional_req.tex")
+("C:\GIT\Telesales\1 Requirements\LaTeX\Prod_data.tex")
+("C:\GIT\Telesales\1 Requirements\LaTeX\Prod_test.tex" [3])
+("C:\GIT\Telesales\1 Requirements\LaTeX\Prod_system_model.tex")
+("C:\GIT\Telesales\1 Requirements\LaTeX\Prod_gui.tex"
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+) ("C:\GIT\Telesales\1 Requirements\LaTeX\Prod_glossary.tex" [4])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 70.
- [9]
+ [5]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 70.
 
 ("C:\GIT\Telesales\1 Requirements\LaTeX\Functional_Requirements_Document.aux")
@@ -843,6 +846,6 @@ Here is how much of TeX's memory you used:
  24606 multiletter control sequences out of 15000+200000
  7836 words of font info for 50 fonts, out of 3000000 for 9000
  1096 hyphenation exceptions out of 8191
- 42i,8n,59p,10404b,326s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,8n,59p,10404b,390s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Functional_Requirements_Document.pdf (11 pages).
+Output written on Functional_Requirements_Document.pdf (7 pages).
