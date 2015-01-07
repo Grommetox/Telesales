@@ -1,0 +1,56 @@
+Beispielformat einer Stapelverarbeitungsdatei
+
+Die Werte der Angaben tariff, tariff-campaign-control und tariff-addon sind äquivalent zu den Angaben im DOM.
+telesales-buying-agent-batch.xml
+
+            <?xml version="1.0"?>
+            <telesales-buying-agent-batch>
+                <telesales-urls>
+                    <telesales-url country="DE">https://hosting-telesales-de.telesales-hosting.gem1.websales.united.domain:9613/</telesales-url>
+                    <telesales-url country="ES">https://hosting-telesales-es.telesales-hosting.gem1.websales.united.domain:9613/</telesales-url>
+                    <telesales-url country="FR">https://hosting-telesales-fr.telesales-hosting.gem1.websales.united.domain:9613/</telesales-url>
+                    …
+                </telesales-urls>
+                <customers>
+                    <customer country="DE">
+                        <customer-number>7156019</customer-number>
+                    </customer>
+                    <customer country="FR">
+                        <customer-number>207958780</customer-number>
+                    </customer>
+                    …
+                </customers>
+                <orders>
+                    <order>
+                        <country>DE</country>
+                        <tariff>tariff-basic</tariff>
+                        <tariff-campaign-control>tariff-toggle</tariff-campaign-control>
+                        <tariff-addons>
+                            <tariff-addon id="presales.articles.slot-eshop-addon">opt-addon-eshop-basic</tariff-addon>
+                            <tariff-addon id="presales.articles.slot-sitelock-basic-addon">opt-addon-sitelock-basic</tariff-addon>
+                            <tariff-addon id="presales.articles.slot-seotool-addon">opt-addon-seotool</tariff-addon>
+                            …
+                        </tariff-addons>
+                        <domain>deinedomain{TIMESTAMP}.de</domain> <!-- {TIMESTAMP} will be replaced by yyyyMMddHHmmss -->
+                        <domain-bundle>false</domain-bundle>
+                    </order>
+                    <order>
+                        <country>FR</country>
+                        <tariff>tariff-basic</tariff>
+                        <tariff-campaign-control>tariff-toggle</tariff-campaign-control>
+                        <tariff-addons />
+                        <domain>votredomain{TIMESTAMP}.fr</domain> <!-- {TIMESTAMP} will be replaced by yyyyMMddHHmmss -->
+                        <domain-bundle>true</domain-bundle>
+                    </order>
+                </orders>
+            </telesales-buying-agent-batch>
+        
+
+Beispielformat einer Datei mit den Login-Daten des Testers
+telesales-buying-agent-login-data.xml
+
+            <?xml version="1.0"?>
+            <telesales-buying-agent-login-data>
+                <username>DeinBenutzername</username>
+                <password>DeinPasswort</password>
+            </telesales-buying-agent-login-data>
