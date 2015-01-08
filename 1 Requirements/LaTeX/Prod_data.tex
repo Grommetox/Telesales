@@ -1,16 +1,84 @@
 \section{Product Data}
-\paragraph{}Each time \app{} generates two XML-Configuration files. One for test configuration and another one for the (fake) customer data that user enters (username and password of a fake customer) for testing.
+\paragraph{}Each time \app{} generates two XML-Configuration files. One for test configuration and another one for the tester's username and password.
 
 \subsection{Configuration data}
 \begin{description}
-\item[/D010/ BlaBlaBla]\hfill \\ Blablabla
+\item[/D00000/ telesales-buying-agent-batch]\hfill \\ Consists from  telesales-urls (\textbf{D01000}), customers (\textbf{D02000}) and orders (\textbf{D03000}).
+\item[/D01000/ telesales-urls]\hfill \\ Consists from a list of telesales-url (\textbf{D01100}).
+\item[/D01100/ telesales-url]\hfill \\ Contains country (\textbf{D01110}) and URL as a value (\textbf{D01120}).
+\item[/D01110/ country]\hfill \\ Tester have to choose a country from the list of countries for testing. The chosen one will be added automatically into the all needed places in the XML-File.
+\item[/D01120/ value (URL)]\hfill \\ Tester have to enter the URL for testing.
+
+\item[/D02000/ customers]\hfill \\ Consists from a list of customer (\textbf{D02100}).
+\item[/D02100/ customer]\hfill \\ Contains country (\textbf{D01110}) and customer-number (\textbf{D02110}).
+\item[/D02110/ customer-number]\hfill \\ Contains customer-number as a value. This is a number of a test customer account.
+
+\item[/D03000/ orders]\hfill \\ Blablabla
+
+
 \item[/D020/ BlaBlaBla]\hfill \\ Blablabla
 \item[/D030/ BlaBlaBla]\hfill \\ Blablabla
 \end{description}
 
-\subsection{Customer data}
-\paragraph{}This data will be used to make test orders as an existed user.
+\begin{landscape}
+\paragraph{Example:}
+\begin{verbatim}
+<?xml version="1.0"?>
+<telesales-buying-agent-batch>
+  <telesales-urls>
+    <telesales-url country="DE">https://hosting-ts-de.ts-host.gem1.sales.united.domain:9613/</telesales-url>
+    <telesales-url country="ES">https://hosting-ts-es.ts-host.gem1.sales.united.domain:9613/</telesales-url>
+    <telesales-url country="FR">https://hosting-ts-fr.ts-host.gem1.sales.united.domain:9613/</telesales-url>
+    …
+  </telesales-urls>
+  <customers>
+    <customer country="DE">
+      <customer-number>7156019</customer-number>
+    </customer>
+    <customer country="FR">
+      <customer-number>207958780</customer-number>
+    </customer>
+    …
+  </customers>
+  <orders>
+    <order>
+      <country>DE</country>
+      <tariff>tariff-basic</tariff>
+      <tariff-campaign-control>tariff-toggle</tariff-campaign-control>
+      <tariff-addons>
+        <tariff-addon id="presales.articles.slot-eshop-addon">opt-addon-eshop-basic</tariff-addon>
+        <tariff-addon id="presales.articles.slot-sitelock-basic-addon">opt-addon-sitelock-basic</tariff-addon>
+        <tariff-addon id="presales.articles.slot-seotool-addon">opt-addon-seotool</tariff-addon>
+        …
+      </tariff-addons>
+      <domain>deinedomain{TIMESTAMP}.de</domain> <!-- {TIMESTAMP} will be replaced by yyyyMMddHHmmss -->
+      <domain-bundle>false</domain-bundle>
+    </order>
+    <order>
+      <country>FR</country>
+      <tariff>tariff-basic</tariff>
+      <tariff-campaign-control>tariff-toggle</tariff-campaign-control>
+      <tariff-addons />
+      <domain>votredomain{TIMESTAMP}.fr</domain> <!-- {TIMESTAMP} will be replaced by yyyyMMddHHmmss -->
+      <domain-bundle>true</domain-bundle>
+    </order>
+  </orders>
+</telesales-buying-agent-batch>
+\end{verbatim}
+\end{landscape}
+
+\subsection{Login data}
+\paragraph{}This data will be used as a login data of the testers.
 \begin{description}
-\item[/DC010/ Customer's number]\hfill\\ This is a number used as an username to log into the control panel. It should be exist.
-\item[/DC020/ Password]\hfill\\ The password of the entered customer's number (\textbf{DC010}).
+\item[/DC010/ username]\hfill\\ Tester's username.
+\item[/DC020/ password]\hfill\\ Tester's password.
+
+\paragraph{Example:}
+\begin{verbatim}
+<?xml version="1.0"?>
+<telesales-buying-agent-login-data>
+    <username>DeinBenutzername</username>
+    <password>DeinPasswort</password>
+</telesales-buying-agent-login-data>
+\end{verbatim}
 \end{description}
