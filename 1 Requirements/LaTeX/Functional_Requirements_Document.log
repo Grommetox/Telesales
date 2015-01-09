@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2014.12.18)  9 JAN 2015 10:22
+This is XeTeX, Version 3.1415926-2.5-0.9999.3 (MiKTeX 2.9 64-bit) (preloaded format=xelatex 2014.12.18)  9 JAN 2015 10:37
 entering extended mode
 **Functional_Requirements_Document.tex
 ("C:\GIT\Telesales\1 Requirements\LaTeX\Functional_Requirements_Document.tex"
@@ -898,11 +898,8 @@ File: d_class_login-data.png Graphic file (type QTm)
 
 ])
 ("C:\GIT\Telesales\1 Requirements\LaTeX\Prod_system_model.tex")
-("C:\GIT\Telesales\1 Requirements\LaTeX\Prod_gui.tex"
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-) ("C:\GIT\Telesales\1 Requirements\LaTeX\Prod_glossary.tex" [9])
+("C:\GIT\Telesales\1 Requirements\LaTeX\Prod_gui.tex")
+("C:\GIT\Telesales\1 Requirements\LaTeX\Prod_glossary.tex" [9])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 71.
  [10]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 71.
