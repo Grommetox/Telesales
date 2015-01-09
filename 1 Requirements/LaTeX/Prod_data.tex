@@ -1,27 +1,19 @@
 \section{Product Data}
-\paragraph{}Each time \app{} generates two XML-Configuration files. One for test configuration and another one for the tester's username and password.
+\paragraph{}Each time \app{} generates two XML-Configuration files. One for test configuration and another one for the tester's username and password. The ``-batch" (for configuration file) and ``-login-data" (for testers login information) endings will be added automatically into the names of the files.
 
 \subsection{Configuration data}
 \begin{description}
-\item[/D00000/ telesales-buying-agent-batch]\hfill \\ Consists from  telesales-urls (\textbf{D01000}), customers (\textbf{D02000}) and orders (\textbf{D03000}).
-\item[/D01000/ telesales-urls]\hfill \\ Consists from a list of telesales-url (\textbf{D01100}).
-\item[/D01100/ telesales-url]\hfill \\ Contains country (\textbf{D01110}) and URL as a value (\textbf{D01120}).
-\item[/D01110/ country]\hfill \\ Tester have to choose a country from the list of countries for testing. The chosen one will be added automatically into the all needed places in the XML-File.
-\item[/D01120/ value (URL)]\hfill \\ Tester have to enter the URL for testing.
-
-\item[/D02000/ customers]\hfill \\ Consists from a list of customer (\textbf{D02100}).
-\item[/D02100/ customer]\hfill \\ Contains country (\textbf{D01110}) and customer-number (\textbf{D02110}).
-\item[/D02110/ customer-number]\hfill \\ Contains customer-number as a value. This is a number of a test customer account.
-
-\item[/D03000/ orders]\hfill \\ Blablabla
-
-
-\item[/D020/ BlaBlaBla]\hfill \\ Blablabla
-\item[/D030/ BlaBlaBla]\hfill \\ Blablabla
+\item[/D010/ country]\hfill \\ Tester have to choose a country from the list of countries for testing. The chosen one will be added automatically into the all needed places in the XML-File.
+\item[/D020/ URL]\hfill \\ Tester have to enter the URL for testing. The entered URL will be added automatically into the all needed places in the XML-File.
+\item[/D030/ customer-number]\hfill \\ It is a number of a test customer account and necessary for testing.
+\item[/D040/ tariff]\hfill \\ Tester have to enter the required tariff information for testing. The entered information will be added automatically into the all needed places in the XML-File.
+\item[/D050/ tariff-addons]\hfill \\ Tester can enter the additional tariff options for testing (optional). The entered data will be added automatically into the all needed places in the XML-File.
+\item[/D060/ domain]\hfill \\ Tester have to enter the domain for testing. The format looks like ``yourdomain.de". A time stamp will be added automatically before the last dot. The entered data will be edited in background automatically and automatically into the needed place in form ``yourdomain\{TIMESTAMP\}.de"  in the XML-File.
+\item[/D070/ domain-bundle]\hfill \\ Tester can set the domain-bundle option to the true or false (default is false) for testing (optional). The data will be added automatically into the needed place in the XML-File.
 \end{description}
 
 \begin{landscape}
-\paragraph{Example:}
+\paragraph{Example of a generated XML-Configuration file:}
 \begin{verbatim}
 <?xml version="1.0"?>
 <telesales-buying-agent-batch>
@@ -65,6 +57,13 @@
   </orders>
 </telesales-buying-agent-batch>
 \end{verbatim}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{d_class_batch.png}
+\caption{UML Class diagramm of the Configuration file}
+\end{figure}
+
 \end{landscape}
 
 \subsection{Login data}
@@ -72,8 +71,9 @@
 \begin{description}
 \item[/DC010/ username]\hfill\\ Tester's username.
 \item[/DC020/ password]\hfill\\ Tester's password.
+\end{description}
 
-\paragraph{Example:}
+\paragraph{Example of a generated XML-Login-data file:}
 \begin{verbatim}
 <?xml version="1.0"?>
 <telesales-buying-agent-login-data>
@@ -81,4 +81,9 @@
     <password>DeinPasswort</password>
 </telesales-buying-agent-login-data>
 \end{verbatim}
-\end{description}
+
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{d_class_login-data.png}
+\caption{UML Class diagramm of the Login data file}
+\end{figure}
