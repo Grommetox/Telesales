@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.collections.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.collections.FXCollections ?>
-
 
 <Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="717.0" prefWidth="977.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
    <children>
@@ -27,7 +27,7 @@
                                           <content>
                                             <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="378.0" prefWidth="908.0">
                                                    <children>
-                                                      <ChoiceBox layoutX="14.0" layoutY="40.0" prefHeight="25.0" prefWidth="55.0" >
+                                                      <ChoiceBox layoutX="14.0" layoutY="40.0" prefHeight="25.0" prefWidth="55.0">
 														<items>
 															<FXCollections fx:factory="observableArrayList">
 																<String fx:value="DE" />
@@ -39,7 +39,7 @@
                                                       <Label layoutX="14.0" layoutY="15.0" text="Country:" />
                                                       <Label layoutX="83.0" layoutY="15.0" text="Telesales URL:" />
                                                       <TextField layoutX="83.0" layoutY="40.0" prefHeight="29.0" prefWidth="810.0" promptText="https://hosting-telesales-de.telesales-hosting.gem1.websales.united.domain:9613/" text="https://hosting-telesales-de.telesales-hosting.gem1.websales.united.domain:9613/" />
-                                                      <TextField layoutX="14.0" layoutY="106.0" prefHeight="29.0" prefWidth="131.0" promptText="207958780" text="207958780" />
+                                                      <TextField layoutX="14.0" layoutY="106.0" prefHeight="29.0" prefWidth="131.0" promptText="7156019" text="7156019" />
                                                       <Label layoutX="14.0" layoutY="81.0" text="Customer's number:" />
                                                       <Label layoutX="158.0" layoutY="81.0" text="Tariff:" />
                                                       <TextField layoutX="158.0" layoutY="106.0" prefHeight="29.0" prefWidth="218.0" promptText="tariff-basic" text="tariff-basic" />
@@ -48,14 +48,14 @@
                                                       <Label layoutX="14.0" layoutY="148.0" text="Tariff addons:" />
                                                       <TableView layoutX="14.0" layoutY="172.0" prefHeight="210.0" prefWidth="876.0">
                                                         <columns>
-                                                          <TableColumn prefWidth="61.0" resizable="false" text="ID" />
+                                                          <TableColumn prefWidth="61.0" resizable="false" text="Remove" />
                                                             <TableColumn prefWidth="447.0" resizable="false" text="ID" />
                                                           <TableColumn minWidth="0.0" prefWidth="367.0" resizable="false" text="Tariff addon" />
                                                         </columns>
                                                       </TableView>
-                                                      <TextField layoutX="618.0" layoutY="104.0" prefHeight="29.0" prefWidth="183.0" promptText="yourdomain.de" text="yourdomain.de" />
+                                                      <TextField layoutX="618.0" layoutY="104.0" prefHeight="29.0" prefWidth="183.0" promptText="deinedomain.de" text="deinedomain.de" />
                                                       <Label layoutX="618.0" layoutY="79.0" text="Domain:" />
-                                                      <ChoiceBox layoutX="812.0" layoutY="106.0" prefHeight="25.0" prefWidth="84.0" >
+                                                      <ChoiceBox layoutX="812.0" layoutY="106.0" prefHeight="25.0" prefWidth="84.0">
 														<items>
 															<FXCollections fx:factory="observableArrayList">
 																<String fx:value="True" />
@@ -68,16 +68,96 @@
                                                 </AnchorPane>
                                           </content>
                                         </TitledPane>
-                                        <TitledPane animated="false" text="Configuration 2">
-                                          <content>
-                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                                          </content>
-                                        </TitledPane>
-                                        <TitledPane animated="false" text="Configuration 3">
-                                          <content>
-                                            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
-                                          </content>
-                                        </TitledPane>
+                                          <TitledPane animated="false" layoutX="10.0" layoutY="10.0" text="Configuration 2">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="378.0" prefWidth="908.0">
+                                                   <children>
+                                                      <ChoiceBox layoutX="14.0" layoutY="40.0" prefHeight="25.0" prefWidth="55.0">
+                                                         <items>
+                                                            <FXCollections fx:factory="observableArrayList">
+                                                               <String fx:value="DE" />
+                                                               <String fx:value="FR" />
+                                                               <String fx:value="ES" />
+                                                            </FXCollections>
+                                                         </items>
+                                                      </ChoiceBox>
+                                                      <Label layoutX="14.0" layoutY="15.0" text="Country:" />
+                                                      <Label layoutX="83.0" layoutY="15.0" text="Telesales URL:" />
+                                                      <TextField layoutX="83.0" layoutY="40.0" prefHeight="29.0" prefWidth="810.0" promptText="https://hosting-telesales-fr.telesales-hosting.gem1.websales.united.domain:9613/" text="https://hosting-telesales-fr.telesales-hosting.gem1.websales.united.domain:9613/" />
+                                                      <TextField layoutX="14.0" layoutY="106.0" prefHeight="29.0" prefWidth="131.0" promptText="207958780" text="207958780" />
+                                                      <Label layoutX="14.0" layoutY="81.0" text="Customer's number:" />
+                                                      <Label layoutX="158.0" layoutY="81.0" text="Tariff:" />
+                                                      <TextField layoutX="158.0" layoutY="106.0" prefHeight="29.0" prefWidth="218.0" promptText="tariff-basic" text="tariff-basic" />
+                                                      <Label layoutX="387.0" layoutY="79.0" text="Tariff-Campaign-Control:" />
+                                                      <TextField layoutX="387.0" layoutY="104.0" prefHeight="29.0" prefWidth="218.0" promptText="tariff-toggle" text="tariff-toggle" />
+                                                      <Label layoutX="14.0" layoutY="148.0" text="Tariff addons:" />
+                                                      <TableView layoutX="14.0" layoutY="172.0" prefHeight="210.0" prefWidth="876.0">
+                                                         <columns>
+                                                            <TableColumn prefWidth="61.0" resizable="false" text="Remove" />
+                                                            <TableColumn prefWidth="447.0" resizable="false" text="ID" />
+                                                            <TableColumn minWidth="0.0" prefWidth="367.0" resizable="false" text="Tariff addon" />
+                                                         </columns>
+                                                      </TableView>
+                                                      <TextField layoutX="618.0" layoutY="104.0" prefHeight="29.0" prefWidth="183.0" promptText="votredomain.fr" text="votredomain.fr" />
+                                                      <Label layoutX="618.0" layoutY="79.0" text="Domain:" />
+                                                      <ChoiceBox layoutX="812.0" layoutY="106.0" prefHeight="25.0" prefWidth="84.0">
+                                                         <items>
+                                                            <FXCollections fx:factory="observableArrayList">
+                                                               <String fx:value="True" />
+                                                               <String fx:value="False" />
+                                                            </FXCollections>
+                                                         </items>
+                                                      </ChoiceBox>
+                                                      <Label layoutX="812.0" layoutY="81.0" text="Domain bundle:" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </TitledPane>
+                                          <TitledPane animated="false" layoutX="10.0" layoutY="35.0" text="Configuration 3">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="378.0" prefWidth="908.0">
+                                                   <children>
+                                                      <ChoiceBox layoutX="14.0" layoutY="40.0" prefHeight="25.0" prefWidth="55.0">
+                                                         <items>
+                                                            <FXCollections fx:factory="observableArrayList">
+                                                               <String fx:value="DE" />
+                                                               <String fx:value="FR" />
+                                                               <String fx:value="ES" />
+                                                            </FXCollections>
+                                                         </items>
+                                                      </ChoiceBox>
+                                                      <Label layoutX="14.0" layoutY="15.0" text="Country:" />
+                                                      <Label layoutX="83.0" layoutY="15.0" text="Telesales URL:" />
+                                                      <TextField layoutX="83.0" layoutY="40.0" prefHeight="29.0" prefWidth="810.0" promptText="https://hosting-telesales-fr.telesales-hosting.gem1.websales.united.domain:9613/" text="https://hosting-telesales-fr.telesales-hosting.gem1.websales.united.domain:9613/" />
+                                                      <TextField layoutX="14.0" layoutY="106.0" prefHeight="29.0" prefWidth="131.0" promptText="207958780" text="207958780" />
+                                                      <Label layoutX="14.0" layoutY="81.0" text="Customer's number:" />
+                                                      <Label layoutX="158.0" layoutY="81.0" text="Tariff:" />
+                                                      <TextField layoutX="158.0" layoutY="106.0" prefHeight="29.0" prefWidth="218.0" promptText="tariff-basic" text="tariff-basic" />
+                                                      <Label layoutX="387.0" layoutY="79.0" text="Tariff-Campaign-Control:" />
+                                                      <TextField layoutX="387.0" layoutY="104.0" prefHeight="29.0" prefWidth="218.0" promptText="tariff-toggle" text="tariff-toggle" />
+                                                      <Label layoutX="14.0" layoutY="148.0" text="Tariff addons:" />
+                                                      <TableView layoutX="14.0" layoutY="172.0" prefHeight="210.0" prefWidth="876.0">
+                                                         <columns>
+                                                            <TableColumn prefWidth="61.0" resizable="false" text="Remove" />
+                                                            <TableColumn prefWidth="447.0" resizable="false" text="ID" />
+                                                            <TableColumn minWidth="0.0" prefWidth="367.0" resizable="false" text="Tariff addon" />
+                                                         </columns>
+                                                      </TableView>
+                                                      <TextField layoutX="618.0" layoutY="104.0" prefHeight="29.0" prefWidth="183.0" promptText="votredomain.fr" text="votredomain.fr" />
+                                                      <Label layoutX="618.0" layoutY="79.0" text="Domain:" />
+                                                      <ChoiceBox layoutX="812.0" layoutY="106.0" prefHeight="25.0" prefWidth="84.0">
+                                                         <items>
+                                                            <FXCollections fx:factory="observableArrayList">
+                                                               <String fx:value="True" />
+                                                               <String fx:value="False" />
+                                                            </FXCollections>
+                                                         </items>
+                                                      </ChoiceBox>
+                                                      <Label layoutX="812.0" layoutY="81.0" text="Domain bundle:" />
+                                                   </children>
+                                                </AnchorPane>
+                                             </content>
+                                          </TitledPane>
                                       </panes>
                                     </Accordion>
                                  </children>
