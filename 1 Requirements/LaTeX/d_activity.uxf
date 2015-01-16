@@ -5,7 +5,7 @@
     <id>UMLSpecialState</id>
     <coordinates>
       <x>50</x>
-      <y>150</y>
+      <y>180</y>
       <w>20</w>
       <h>20</h>
     </coordinates>
@@ -16,7 +16,7 @@
     <id>UMLState</id>
     <coordinates>
       <x>120</x>
-      <y>50</y>
+      <y>0</y>
       <w>100</w>
       <h>40</h>
     </coordinates>
@@ -27,7 +27,7 @@
     <id>UMLState</id>
     <coordinates>
       <x>120</x>
-      <y>230</y>
+      <y>300</y>
       <w>100</w>
       <h>40</h>
     </coordinates>
@@ -38,7 +38,7 @@
     <id>Relation</id>
     <coordinates>
       <x>50</x>
-      <y>150</y>
+      <y>180</y>
       <w>80</w>
       <h>30</h>
     </coordinates>
@@ -49,19 +49,19 @@
     <id>Relation</id>
     <coordinates>
       <x>180</x>
-      <y>180</y>
+      <y>210</y>
       <w>60</w>
-      <h>70</h>
+      <h>110</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 New</panel_attributes>
-    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
       <x>110</x>
-      <y>130</y>
+      <y>160</y>
       <w>250</w>
       <h>60</h>
     </coordinates>
@@ -73,31 +73,31 @@ layer=2</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>180</x>
-      <y>80</y>
+      <y>30</y>
       <w>60</w>
-      <h>70</h>
+      <h>150</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 Open</panel_attributes>
-    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>130</x>
-      <y>180</y>
+      <y>210</y>
       <w>50</w>
-      <h>70</h>
+      <h>110</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 OK</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
   </element>
   <element>
     <id>UMLSpecialState</id>
     <coordinates>
       <x>460</x>
-      <y>160</y>
+      <y>190</y>
       <w>20</w>
       <h>20</h>
     </coordinates>
@@ -108,7 +108,7 @@ OK</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>350</x>
-      <y>150</y>
+      <y>180</y>
       <w>130</w>
       <h>40</h>
     </coordinates>
@@ -120,7 +120,7 @@ OK</panel_attributes>
     <id>UMLState</id>
     <coordinates>
       <x>250</x>
-      <y>50</y>
+      <y>0</y>
       <w>100</w>
       <h>40</h>
     </coordinates>
@@ -132,67 +132,68 @@ Dialog</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>310</x>
-      <y>80</y>
-      <w>60</w>
-      <h>70</h>
+      <y>30</y>
+      <w>140</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-Save</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+Save
+[isSavable == true]</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>260</x>
-      <y>80</y>
+      <y>30</y>
       <w>50</w>
-      <h>70</h>
+      <h>150</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
 OK</panel_attributes>
-    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;130.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>130</x>
-      <y>80</y>
+      <y>30</y>
       <w>50</w>
-      <h>70</h>
+      <h>150</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 OK</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
   </element>
   <element>
     <id>Text</id>
     <coordinates>
       <x>400</x>
-      <y>110</y>
+      <y>140</y>
       <w>170</w>
       <h>40</h>
     </coordinates>
-    <panel_attributes>[!countries_list.isEmpty]
-Add</panel_attributes>
+    <panel_attributes>Add
+[!countries_list.isEmpty]</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>340</x>
-      <y>100</y>
+      <y>120</y>
       <w>80</w>
-      <h>70</h>
+      <h>80</h>
     </coordinates>
     <panel_attributes>lt=-&gt;
 </panel_attributes>
-    <additional_attributes>10.0;30.0;10.0;20.0;60.0;20.0;60.0;50.0;20.0;50.0</additional_attributes>
+    <additional_attributes>10.0;40.0;10.0;20.0;60.0;20.0;60.0;60.0;20.0;60.0</additional_attributes>
   </element>
   <element>
     <id>UMLState</id>
     <coordinates>
-      <x>260</x>
-      <y>230</y>
+      <x>250</x>
+      <y>300</y>
       <w>90</w>
       <h>40</h>
     </coordinates>
@@ -203,24 +204,25 @@ Batch</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>300</x>
-      <y>180</y>
-      <w>50</w>
-      <h>70</h>
+      <x>310</x>
+      <y>210</y>
+      <w>150</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>lt=&lt;-
-Run</panel_attributes>
-    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
+Run
+[isRunnable == true]</panel_attributes>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>280</x>
-      <y>180</y>
+      <x>260</x>
+      <y>210</y>
       <w>30</w>
-      <h>70</h>
+      <h>110</h>
     </coordinates>
     <panel_attributes>lt=&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
   </element>
 </diagram>

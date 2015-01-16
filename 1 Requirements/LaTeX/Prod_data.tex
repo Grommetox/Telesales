@@ -3,17 +3,17 @@
 
 \subsection{Configuration data}
 \begin{description}
-\item[/D010/ country]\hfill \\ Tester have to choose a country from the list of countries for testing. The chosen one will be added automatically into the all needed places in the XML-File.
-\item[/D020/ URL]\hfill \\ Tester have to enter the URL for testing. The entered URL will be added automatically into the all needed places in the XML-File.
+\item[/D010/ country]\hfill \\ User have to choose a country from the list of countries for testing. The chosen one will be added automatically into the all needed places in the XML-File and removed from the list to avoid the second configuration for the same county (requirement of batch application).
+\item[/D020/ URL]\hfill \\ User have to enter the URL for testing. The entered URL will be added automatically into the all needed places in the XML-File.
 \item[/D030/ customer-number]\hfill \\ It is a number of a test customer account and necessary for testing.
-\item[/D040/ tariff]\hfill \\ Tester have to enter the required tariff information for testing. The entered information will be added automatically into the all needed places in the XML-File.
-\item[/D050/ tariff-addons]\hfill \\ Tester can enter the additional tariff options for testing (optional). The entered data will be added automatically into the all needed places in the XML-File.
-\item[/D060/ domain]\hfill \\ Tester have to enter the domain for testing. The format looks like ``yourdomain.de". A time stamp will be added automatically before the last dot. The entered data will be edited in background automatically and automatically into the needed place in form ``yourdomain\{TIMESTAMP\}.de"  in the XML-File.
-\item[/D070/ domain-bundle]\hfill \\ Tester can set the domain-bundle option to the true or false (default is false) for testing (optional). The data will be added automatically into the needed place in the XML-File.
+\item[/D040/ tariff]\hfill \\ User have to enter the required tariff information for testing. The entered information will be added automatically into the all needed places in the XML-File.
+\item[/D050/ tariff-addons]\hfill \\ User can enter the additional tariff options for testing (optional). The entered data will be added automatically into the all needed places in the XML-File.
+\item[/D060/ domain]\hfill \\ User have to enter the domain for testing. The format looks like ``yourdomain.de". A time stamp will be added automatically before the last dot. The entered data will be edited in background automatically and added into the needed places in form of ``yourdomain\{TIMESTAMP\}.de"  in the XML-File.
+\item[/D070/ domain-bundle]\hfill \\ User can set the domain-bundle option to the true or false (default is false) for testing (optional). The data will be added automatically into the needed place in the XML-File.
 \end{description}
 
 \begin{landscape}
-\paragraph{Example of a generated XML-Configuration file:}
+\paragraph{Example of a generated XML-Configuration file (extracted from Torsten's file):}
 \begin{verbatim}
 <?xml version="1.0"?>
 <telesales-buying-agent-batch>
@@ -67,13 +67,13 @@
 \end{landscape}
 
 \subsection{Login data}
-\paragraph{}This data will be used as a login data of the testers.
+\paragraph{}This data will be used as an user's login data.
 \begin{description}
-\item[/DC010/ username]\hfill\\ Tester's username.
-\item[/DC020/ password]\hfill\\ Tester's password.
+\item[/DC010/ username]\hfill\\ User's (Tester's) username.
+\item[/DC020/ password]\hfill\\ User's (Tester's) password.
 \end{description}
 
-\paragraph{Example of a generated XML-Login-data file:}
+\paragraph{Example of a generated XML-Login-data file (extracted from Torsten's file):}
 \begin{verbatim}
 <?xml version="1.0"?>
 <telesales-buying-agent-login-data>
