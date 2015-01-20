@@ -17,11 +17,12 @@ public class Main extends Application {
 			HBox testElement = new HBox();
 			testElement.getChildren().add(new Button("Hello world"));
 			
-			BorderPaneRoot root = new BorderPaneRoot(new TabPane(), testElement);
+			BorderPaneRoot root = new BorderPaneRoot(new TabPane(), testElement, primaryStage);
 			Scene scene = new Scene(root,400,400);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();
+			
 		} catch(Exception e) {
 			e.printStackTrace();
 		}

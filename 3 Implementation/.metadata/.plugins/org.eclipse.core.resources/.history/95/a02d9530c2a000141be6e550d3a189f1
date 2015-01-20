@@ -1,0 +1,17 @@
+package gui.elements;
+
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+
+class WarningWindow extends Stage {
+
+	public WarningWindow() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public WarningWindow(StageStyle arg0) {
+		super(arg0);
+		// TODO Auto-generated constructor stub
+	}
+
+}
