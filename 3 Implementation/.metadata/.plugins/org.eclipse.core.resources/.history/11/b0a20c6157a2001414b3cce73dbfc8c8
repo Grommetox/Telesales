@@ -24,7 +24,7 @@ public class BorderPaneRoot extends BorderPane {
 		if (hBox == null) {
 			WarningWindow tabPaneError = new WarningWindow("HBox is null!", owner);
 			tabPaneError.showAndWait();
-			System.exit(2);
+			System.exit(1);
 		}
 		
 		// Everything is okay now

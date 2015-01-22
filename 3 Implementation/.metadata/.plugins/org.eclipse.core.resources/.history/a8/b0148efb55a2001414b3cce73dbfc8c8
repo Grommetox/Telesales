@@ -1,0 +1,20 @@
+package gui.elements;
+
+import javafx.scene.control.Button;
+import javafx.scene.layout.HBox;
+
+public class HBoxRoot extends HBox {
+
+	public HBoxRoot(Button create, Button open, Button save, Button saveAs, Button run, Button exit) {
+		super();
+		
+		Button buttons[6];
+		buttons[0] = create;
+		buttons[1] = open;
+		buttons[2] = save;
+		buttons[3] = saveAs;
+		buttons[4] = run;
+		buttons[5] = exit;
+	}
+
+}
