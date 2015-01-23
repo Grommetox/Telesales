@@ -1,10 +1,5 @@
 package gui.elements;
 
-/**
- * Shows a warning window.
- * @author rasgarbayli
- * @version 1.0
- */
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.geometry.Insets;
@@ -18,8 +13,18 @@ import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
+/**
+ * Shows a warning window. Contains a label to show passed string content and a button to close the window.
+ * @author rasgarbayli
+ * @version 1.0
+ */
 public class WarningWindow extends Stage {
-
+	
+	/**
+	 * Constructor of the class and requires all listed arguments. The arguments must not reference to the null
+	 * @param message - Text or content of the error message
+	 * @param owner - reference to the main stage of the application (main window)
+	 */
 	public WarningWindow(String message, Stage owner) {
 		
 		Insets insets = new Insets(10);
@@ -60,8 +65,6 @@ public class WarningWindow extends Stage {
 	    this.initOwner(owner);
 	}
 
-	private WarningWindow(StageStyle arg0) {
-		// Preventing of creation of the warning window without owner
-	}
-
+	// Preventing of creation of the warning window without owner
+	private WarningWindow(StageStyle arg0) {}
 }

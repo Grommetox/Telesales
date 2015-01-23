@@ -7,8 +7,27 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Priority;
 import javafx.stage.Stage;
 
+/**
+ * Contains buttons at the bottom of the application.
+ * The 6 buttons (New, Open, Save, Save as, Run the configuration, Exit) are required for construction.
+ * The main stage (as owner of the error messages) is also required for construction.
+ * @author rasgarbayli
+ * @version 1.0
+ */
 public class HBoxRoot extends HBox {
 
+	/**
+	 * Constructor of the class and requires all listed arguments. If one of the arguments is referenced to the null,
+	 * than gives an error message and exits with a status 3. (Status 3 is defined for the null reference of the 6 root
+	 * buttons)
+	 * @param primaryStage - reference to the main stage of the application (main window)
+	 * @param create - reference to the button named New on the stage. (new is reserved word, that is why create instead of new)
+	 * @param open - reference to the button named Open
+	 * @param save - reference to the button named Save
+	 * @param saveAs - reference to the button named Save as
+	 * @param run - reference to the button named Run the configuration
+	 * @param exit - reference to the button named Exit
+	 */
 	public HBoxRoot(Stage primaryStage, Button create, Button open, Button save, Button saveAs, Button run, Button exit) {
 		super();
 		
@@ -53,7 +72,7 @@ public class HBoxRoot extends HBox {
 		this.getChildren().add(save);
 		this.getChildren().add(saveAs);
 		
-		// run button in the center
+		// Run button in the center
 		HBox runHBox = new HBox();
 		HBox.setHgrow(runHBox, Priority.ALWAYS);
 		runHBox.setAlignment(Pos.CENTER);

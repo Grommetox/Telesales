@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+package gui.elements;
+
+import javafx.scene.control.TabPane;
+
+/**
+ * @author rasgarbayli
+ *
+ */
+public class TabPaneRoot extends TabPane {
+
+	/**
+	 * 
+	 */
+	public TabPaneRoot() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

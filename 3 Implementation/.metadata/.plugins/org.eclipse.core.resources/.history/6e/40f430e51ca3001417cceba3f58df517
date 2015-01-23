@@ -1,0 +1,48 @@
+/**
+ * Root element of the main stage. Contains a TabPaneRoot and HBoxRoot.
+ * See descriptions of the TabpaneRoot and HBoxRoot.
+ */
+
+package gui.elements;
+
+import javafx.geometry.Insets;
+import javafx.scene.control.TabPane;
+import javafx.scene.layout.BorderPane;
+import javafx.stage.Stage;
+
+/**
+ * @author rasgarbayli
+ * @version 1.0
+ */
+public class BorderPaneRoot extends BorderPane {
+	TabPaneRoot tabPaneRoot;
+	HBoxRoot hBoxRoot;
+	
+	
+	public BorderPaneRoot(TabPaneRoot tabPaneRoot, HBoxRoot hBoxRoot, Stage owner) {
+		super();
+		
+		// tabPane must not be null
+		if (tabPane == null) {
+			WarningWindow tabPaneError = new WarningWindow("TabPane is null!", owner);
+			tabPaneError.showAndWait();
+			System.exit(1);
+		}
+		
+		// HBox must not be null
+		if (hBoxRoot == null) {
+			WarningWindow tabPaneError = new WarningWindow("HBox is null!", owner);
+			tabPaneError.showAndWait();
+			System.exit(2);
+		}
+			
+		// Everything is okay now
+		this.tabPaneRoot = tabPaneRoot;
+		this.hBoxRoot = hBoxRoot;
+		this.setPadding(new Insets(10));
+		this.setMinSize(980, 720);
+		this.setPrefSize(980, 720);
+		this.setCenter(tabPaneRoot);
+		this.setBottom(hBoxRoot);
+	}
+}
