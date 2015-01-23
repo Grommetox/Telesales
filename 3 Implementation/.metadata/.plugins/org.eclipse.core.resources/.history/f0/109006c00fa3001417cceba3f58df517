@@ -26,13 +26,11 @@ public class BorderPaneRoot extends BorderPane {
 			tabPaneError.showAndWait();
 			System.exit(2);
 		}
-			
+		
 		// Everything is okay now
 		this.tabPane = tabPane;
 		this.hBox = hBox;
 		this.setPadding(new Insets(10));
-		this.setMinSize(980, 720);
-		this.setPrefSize(980, 720);
 		this.setCenter(tabPane);
 		this.setBottom(hBox);
 	}

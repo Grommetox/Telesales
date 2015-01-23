@@ -31,8 +31,8 @@ public class BorderPaneRoot extends BorderPane {
 		this.tabPane = tabPane;
 		this.hBox = hBox;
 		this.setPadding(new Insets(10));
-		this.setMinSize(980, 720);
-		this.setPrefSize(980, 720);
+		this.minWidth(980);
+		this.minHeight(720);
 		this.setCenter(tabPane);
 		this.setBottom(hBox);
 	}

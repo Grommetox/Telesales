@@ -7,6 +7,7 @@ import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TabPane;
+import javafx.scene.layout.HBox;
 
 
 public class Main extends Application {
@@ -26,7 +27,7 @@ public class Main extends Application {
 			HBoxRoot hBoxRoot = new HBoxRoot(primaryStage, create, open, save, saveAs, run, exit);
 			
 			BorderPaneRoot root = new BorderPaneRoot(new TabPane(), hBoxRoot, primaryStage);
-			Scene scene = new Scene(root);
+			Scene scene = new Scene(root,400,400);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
 			primaryStage.show();

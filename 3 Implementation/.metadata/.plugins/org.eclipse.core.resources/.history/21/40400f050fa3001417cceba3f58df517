@@ -60,8 +60,9 @@ public class WarningWindow extends Stage {
 	    this.initOwner(owner);
 	}
 
-	private WarningWindow(StageStyle arg0) {
-		// Preventing of creation of the warning window without owner
+	public WarningWindow(StageStyle arg0) {
+		super(arg0);
+		// TODO Auto-generated constructor stub
 	}
 
 }

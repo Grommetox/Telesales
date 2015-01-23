@@ -47,7 +47,6 @@ public class HBoxRoot extends HBox {
 		// All buttons are now ready to be placed on the HBoxRoot
 		this.setPadding(new Insets(5));
 		this.setSpacing(5);
-		
 		this.getChildren().add(create);
 		this.getChildren().add(open);
 		this.getChildren().add(save);
@@ -58,7 +57,6 @@ public class HBoxRoot extends HBox {
 		HBox.setHgrow(runHBox, Priority.ALWAYS);
 		runHBox.setAlignment(Pos.CENTER);
 		runHBox.getChildren().add(run);
-		
 		this.getChildren().add(runHBox);
 		
 		// Exit button at the right
@@ -68,6 +66,8 @@ public class HBoxRoot extends HBox {
 		exitHBox.getChildren().add(exit);
 		
 		this.getChildren().add(exitHBox);
+		
+		// Ordering buttons
 	}
 
 }
