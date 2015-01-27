@@ -1,7 +1,0 @@
-package gui.elements;
-
-import javafx.scene.layout.BorderPane;
-
-public class BorderPaneRoot extends BorderPane {
-
-}

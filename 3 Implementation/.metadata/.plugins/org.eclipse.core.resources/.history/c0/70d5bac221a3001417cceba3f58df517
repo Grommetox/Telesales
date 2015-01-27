@@ -25,7 +25,7 @@ public class Main extends Application {
 			// building root HBox
 			HBoxRoot hBoxRoot = new HBoxRoot(primaryStage, create, open, save, saveAs, run, exit);
 			
-			BorderPaneRoot root = new BorderPaneRoot(new TabPaneRoot(null, null, null), hBoxRoot, primaryStage);
+			BorderPaneRoot root = new BorderPaneRoot(new TabPaneRoot(), hBoxRoot, primaryStage);
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
