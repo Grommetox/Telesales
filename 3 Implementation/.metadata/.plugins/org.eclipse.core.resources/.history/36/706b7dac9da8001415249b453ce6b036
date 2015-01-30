@@ -2,7 +2,7 @@ package gui.elements;
 
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
-import javafx.stage.Stage;
+import javafx.scene.layout.HBox;
 
 /**
  * Root element of the 2 Tabs that represents 2 section:

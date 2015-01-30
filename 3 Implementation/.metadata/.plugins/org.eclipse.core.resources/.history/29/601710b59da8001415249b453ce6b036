@@ -2,6 +2,7 @@ package gui.elements;
 
 import javafx.scene.control.Tab;
 import javafx.scene.control.TabPane;
+import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 
 /**

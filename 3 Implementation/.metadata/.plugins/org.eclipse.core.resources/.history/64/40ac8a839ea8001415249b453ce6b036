@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+package gui.elements;
+
+import javafx.scene.control.Tab;
+
+/**
+ * @author rasgarbayli
+ *
+ */
+public class TabLoginData extends Tab {
+
+	/**
+	 * 
+	 */
+	public TabLoginData() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param arg0
+	 */
+	public TabLoginData(String arg0) {
+		super(arg0);
+		// TODO Auto-generated constructor stub
+	}
+
+}
