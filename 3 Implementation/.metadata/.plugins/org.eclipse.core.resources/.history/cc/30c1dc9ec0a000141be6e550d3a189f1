@@ -1,7 +1,0 @@
-package gui.elements;
-
-import javafx.stage.Stage;
-
-public class WarningWindow extends Stage {
-	
-}

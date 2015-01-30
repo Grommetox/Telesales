@@ -1,7 +1,0 @@
-package gui.elements;
-
-import java.lang.Exception;
-
-public class StageElementNullException extends Exception {
-	
-}
