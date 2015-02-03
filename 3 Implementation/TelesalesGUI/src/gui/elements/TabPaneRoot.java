@@ -25,6 +25,7 @@ public class TabPaneRoot extends TabPane {
 	 */
 	public TabPaneRoot(Tab config, Tab login, Stage primaryStage) {
 		super();
+		this.setTabClosingPolicy(TabClosingPolicy.UNAVAILABLE);
 		
 		// Tab containing test configurations must not reference to the null
 		if (config == null) {

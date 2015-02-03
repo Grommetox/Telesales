@@ -7,13 +7,11 @@
 <fullyQualifiedTypeName name="javafx.scene.Scene"/>
 <fullyQualifiedTypeName name="javafx.scene.layout.Pane"/>
 <fullyQualifiedTypeName name="javafx.event.EventHandler"/>
-<fullyQualifiedTypeName name="javafx.scene.control.Label"/>
 <fullyQualifiedTypeName name="javafx.stage.Modality"/>
 <fullyQualifiedTypeName name="javafx.scene.Node"/>
 <fullyQualifiedTypeName name="javafx.stage.Stage"/>
 <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
 <fullyQualifiedTypeName name="gui.elements.HBoxRoot"/>
-<fullyQualifiedTypeName name="javafx.geometry.Insets"/>
 <fullyQualifiedTypeName name="javafx.geometry.Pos"/>
 <fullyQualifiedTypeName name="javafx.geometry.HPos"/>
 <fullyQualifiedTypeName name="javafx.geometry.VPos"/>
@@ -23,7 +21,12 @@
 <fullyQualifiedTypeName name="javafx.scene.layout.HBox"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="gui.elements.WarningWindow"/>
-<fullyQualifiedTypeName name="gui.elements.TabLoginData"/>
 <fullyQualifiedTypeName name="javafx.scene.layout.BorderPane"/>
 <fullyQualifiedTypeName name="javafx.scene.layout.VBox"/>
+<fullyQualifiedTypeName name="javafx.scene.control.TextField"/>
+<fullyQualifiedTypeName name="javafx.scene.control.Label"/>
+<fullyQualifiedTypeName name="javafx.scene.control.PasswordField"/>
+<fullyQualifiedTypeName name="gui.elements.TabLoginData"/>
+<fullyQualifiedTypeName name="gui.elements.VBoxLogin"/>
+<fullyQualifiedTypeName name="javafx.geometry.Insets"/>
 </qualifiedTypeNameHistroy>

@@ -28,9 +28,8 @@ public class Main extends Application {
 			HBoxRoot hBoxRoot = new HBoxRoot(primaryStage, create, open, save, saveAs, run, exit);
 			
 			TabLoginData login = new TabLoginData(new VBoxLogin());
-			TabLoginData login2 = new TabLoginData(new VBoxLogin());
 			
-			BorderPaneRoot root = new BorderPaneRoot(new TabPaneRoot(login2, login, primaryStage), hBoxRoot, primaryStage);
+			BorderPaneRoot root = new BorderPaneRoot(new TabPaneRoot(null, login, null), hBoxRoot, primaryStage);
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);

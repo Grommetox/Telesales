@@ -1,0 +1,38 @@
+package gui.elements;
+
+import javafx.scene.Node;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.VBox;
+
+/**
+ * @author rasgarbayli
+ * @version 1.0
+ */
+public class VBoxLogin extends VBox {
+	private TextField login; // reference to the login field
+	private PasswordField password; // reference to the password field
+	
+	/**
+	 * 
+	 */
+	public VBoxLogin() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * preventing constructor
+	 */
+	private VBoxLogin(double arg0) {}
+
+	/**
+	 * preventing constructor
+	 */
+	private VBoxLogin(Node... arg0) {}
+
+	/**
+	 * preventing constructor
+	 */
+	private VBoxLogin(double arg0, Node... arg1) {}
+
+}

@@ -1,0 +1,71 @@
+package gui.elements;
+
+import javafx.geometry.Insets;
+import javafx.scene.Node;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.VBox;
+
+/**
+ * @author rasgarbayli
+ * @version 1.0
+ */
+public class VBoxLogin extends VBox {
+	private TextField login; // reference to the login field
+	private PasswordField password; // reference to the password field
+	
+	/**
+	 * 
+	 */
+	public VBoxLogin() {
+		// creating login field
+		final Label lLogin = new Label("Login:");
+		lLogin.setPadding(new Insets(5));
+		this.getChildren().add(lLogin);
+		this.login = new TextField();
+		this.login.setPromptText("Enter login here.");
+		this.login.setPadding(new Insets(0, 5, 15, 5));
+		this.getChildren().add(login);
+		
+		// now password field
+		final Label lpass = new Label("Password:");
+		this.getChildren().add(lpass);
+		this.password = new  PasswordField();
+		this.password.setPromptText("Enter password here.");
+		this.getChildren().add(password);
+		
+		this.setMaxSize(300, 400);
+		
+	}
+
+	/**
+	 * preventing constructor
+	 */
+	private VBoxLogin(double arg0) {}
+
+	/**
+	 * preventing constructor
+	 */
+	private VBoxLogin(Node... arg0) {}
+
+	/**
+	 * preventing constructor
+	 */
+	private VBoxLogin(double arg0, Node... arg1) {}
+
+	/**
+	 * @return the login
+	 */
+	public TextField getLogin() {
+		return login;
+	}
+
+	/**
+	 * @return the password
+	 */
+	public PasswordField getPassword() {
+		return password;
+	}
+
+}

@@ -1,0 +1,47 @@
+/**
+ * 
+ */
+package gui.elements;
+
+import javafx.scene.Node;
+import javafx.scene.layout.VBox;
+
+/**
+ * @author rasgarbayli
+ *
+ */
+public class VBoxLogin extends VBox {
+
+	/**
+	 * 
+	 */
+	public VBoxLogin() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param arg0
+	 */
+	public VBoxLogin(double arg0) {
+		super(arg0);
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param arg0
+	 */
+	public VBoxLogin(Node... arg0) {
+		super(arg0);
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param arg0
+	 * @param arg1
+	 */
+	public VBoxLogin(double arg0, Node... arg1) {
+		super(arg0, arg1);
+		// TODO Auto-generated constructor stub
+	}
+
+}
