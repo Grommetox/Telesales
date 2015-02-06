@@ -1,8 +1,6 @@
 package gui.elements;
 
-import javafx.scene.control.PasswordField;
 import javafx.scene.control.Tab;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 
 /**
@@ -11,8 +9,6 @@ import javafx.scene.layout.BorderPane;
  * @version 1.0
  */
 public class TabLoginData extends Tab {
-	private TextField loginField;
-	private PasswordField passwordField;
 
 	/**
 	 * preventing default constructor
@@ -39,22 +35,6 @@ public class TabLoginData extends Tab {
 		
 		// tab owns the content
 		this.setContent(content);
-		this.loginField = loginElemenst.getLogin();
-		this.passwordField = loginElemenst.getPassword();
-	}
-
-	/**
-	 * @return the loginField
-	 */
-	public TextField getLoginField() {
-		return loginField;
-	}
-
-	/**
-	 * @return the passwordField
-	 */
-	public PasswordField getPasswordField() {
-		return passwordField;
 	}
 
 }

@@ -39,11 +39,4 @@ public class TabConfiguration extends Tab {
 		this.configurations = spConfig.getConfigurations();
 	}
 
-	/**
-	 * @return the configurations
-	 */
-	public AnchorPane getConfigurations() {
-		return configurations;
-	}
-
 }

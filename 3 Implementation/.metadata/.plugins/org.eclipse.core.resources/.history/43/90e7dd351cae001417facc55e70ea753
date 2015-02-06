@@ -35,15 +35,6 @@ public class TabConfiguration extends Tab {
 		content.getChildren().add(spConfig);
 		content.getChildren().add(hbAddRemove);
 		this.setContent(content);
-		
-		this.configurations = spConfig.getConfigurations();
-	}
-
-	/**
-	 * @return the configurations
-	 */
-	public AnchorPane getConfigurations() {
-		return configurations;
 	}
 
 }

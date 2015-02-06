@@ -4,7 +4,6 @@
 package gui.elements;
 
 import javafx.scene.control.Tab;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 
 /**
@@ -12,8 +11,7 @@ import javafx.scene.layout.VBox;
  *
  */
 public class TabConfiguration extends Tab {
-	private AnchorPane configurations;
-	
+
 	/**
 	 * preventing default constructor
 	 */
@@ -35,15 +33,6 @@ public class TabConfiguration extends Tab {
 		content.getChildren().add(spConfig);
 		content.getChildren().add(hbAddRemove);
 		this.setContent(content);
-		
-		this.configurations = spConfig.getConfigurations();
-	}
-
-	/**
-	 * @return the configurations
-	 */
-	public AnchorPane getConfigurations() {
-		return configurations;
 	}
 
 }

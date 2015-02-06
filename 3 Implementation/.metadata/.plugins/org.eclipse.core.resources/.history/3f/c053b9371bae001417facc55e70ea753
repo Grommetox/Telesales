@@ -39,7 +39,7 @@ public class TabLoginData extends Tab {
 		
 		// tab owns the content
 		this.setContent(content);
-		this.loginField = loginElemenst.getLogin();
+		this.textField = loginElemenst.getLogin();
 		this.passwordField = loginElemenst.getPassword();
 	}
 
