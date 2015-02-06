@@ -46,7 +46,7 @@ public class ButtonAdd extends Button {
 	 * Constructs Add button, to add new configurations into the anchor pane
 	 * @param configs is the reference to the anchor pane that will be new configuration added.
 	 */
-	protected ButtonAdd(Accordion configs) {
+	protected ButtonAdd(AnchorPane configs) {
 		this();
 		this.configs = configs;
 		

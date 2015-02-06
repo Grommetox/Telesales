@@ -6,17 +6,16 @@ package gui.elements;
 import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.scene.Node;
-import javafx.scene.control.Accordion;
 import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.AnchorPaneBuilder;
 
 /**
- * The button that checks and adds new configuration, if it is possible.
  * @author rasgarbayli
- * @version 1.0
+ *
  */
 public class ButtonAdd extends Button {
-	private Accordion configs;
+	private AnchorPane configs;
 
 	/**
 	 * prevents default constructor
@@ -40,13 +39,14 @@ public class ButtonAdd extends Button {
 	 */
 	private ButtonAdd(String arg0, Node arg1) {
 		super(arg0, arg1);
+		// TODO Auto-generated constructor stub
 	}
 	
 	/**
 	 * Constructs Add button, to add new configurations into the anchor pane
 	 * @param configs is the reference to the anchor pane that will be new configuration added.
 	 */
-	protected ButtonAdd(Accordion configs) {
+	protected ButtonAdd(AnchorPane configs) {
 		this();
 		this.configs = configs;
 		

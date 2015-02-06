@@ -1,0 +1,40 @@
+/**
+ * 
+ */
+package gui.elements;
+
+import javafx.scene.Node;
+import javafx.scene.control.Button;
+
+/**
+ * @author rasgarbayli
+ *
+ */
+public class ButtonAdd extends Button {
+
+	/**
+	 * prevents default constructor
+	 */
+	public ButtonAdd() {
+		this("Add");
+	}
+
+	/**
+	 * prevents default constructor
+	 * @param arg0
+	 */
+	private ButtonAdd(String text) {
+		super(text);
+	}
+
+	/**
+	 * prevents default constructor
+	 * @param arg0
+	 * @param arg1
+	 */
+	private ButtonAdd(String arg0, Node arg1) {
+		super(arg0, arg1);
+		// TODO Auto-generated constructor stub
+	}
+
+}
