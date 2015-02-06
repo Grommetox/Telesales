@@ -23,7 +23,7 @@ public class TabPaneRoot extends TabPane {
 	 * @param login - reference to the Tab, that contains elements to input Login Data
 	 * @param primaryStage - reference to the Primary Stage of the program. It is the owner of the warning windows.
 	 */
-	public TabPaneRoot(Tab config, Tab login, Stage primaryStage) {
+	public TabPaneRoot(TabConfiguration config, TabLoginData login, Stage primaryStage) {
 		super();
 		this.setTabClosingPolicy(TabClosingPolicy.UNAVAILABLE);
 		

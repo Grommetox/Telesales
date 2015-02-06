@@ -2,7 +2,6 @@ package gui.elements;
 
 import javafx.scene.control.Tab;
 import javafx.scene.layout.BorderPane;
-import javafx.scene.layout.VBox;
 
 /**
  * The tab containing Elements to input login data of the user
@@ -15,20 +14,18 @@ public class TabLoginData extends Tab {
 	 * preventing default constructor
 	 */
 	private TabLoginData() {
-		// Always with text Login Data
-		super("Login Data");
+		this("Login Data");
 	}
 
 	/**
 	 * preventing default constructor
-	 * @param tabName - will not be used.
+	 * @param tabName - String that represents name of the tab.
 	 */
 	private TabLoginData(String tabName) {
-		// Always with text Login Data
-		super("Login Data");
+		super(tabName);
 	}
 	
-	public TabLoginData(VBox loginElemenst) {
+	public TabLoginData(VBoxLogin loginElemenst) {
 		// creating a tab with title "Login Data"
 		this();
 		

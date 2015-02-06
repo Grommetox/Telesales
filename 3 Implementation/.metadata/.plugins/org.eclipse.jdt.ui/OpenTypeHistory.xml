@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=TelesalesGUI/C:\/Program Files\/Java\/jre1.8.0_31\/lib\/ext\/jfxrt.jar&lt;javafx.scene.control(Tab.class[Tab" modifiers="33" timestamp="1422378076392"/>
 <typeInfo handle="=TelesalesGUI/C:\/Program Files\/Java\/jre1.8.0_31\/lib\/ext\/jfxrt.jar&lt;javafx.scene.layout(VBox.class[VBox" modifiers="33" timestamp="1422378076392"/>
+<typeInfo handle="=TelesalesGUI/C:\/Program Files\/Java\/jre1.8.0_31\/lib\/ext\/jfxrt.jar&lt;javafx.scene.control(Tab.class[Tab" modifiers="33" timestamp="1422378076392"/>
+<typeInfo handle="=TelesalesGUI/C:\/Program Files\/Java\/jre1.8.0_31\/lib\/ext\/jfxrt.jar&lt;javafx.scene.layout(HBox.class[HBox" modifiers="33" timestamp="1422378076392"/>
+<typeInfo handle="=TelesalesGUI/C:\/Program Files\/Java\/jre1.8.0_31\/lib\/ext\/jfxrt.jar&lt;javafx.scene.control(Button.class[Button" modifiers="33" timestamp="1422378076392"/>
 </typeInfoHistroy>

@@ -1,0 +1,47 @@
+/**
+ * 
+ */
+package gui.elements;
+
+import javafx.scene.Node;
+import javafx.scene.layout.HBox;
+
+/**
+ * @author rasgarbayli
+ *
+ */
+public class HBoxAddRemove extends HBox {
+
+	/**
+	 * 
+	 */
+	public HBoxAddRemove() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param arg0
+	 */
+	public HBoxAddRemove(double arg0) {
+		super(arg0);
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param arg0
+	 */
+	public HBoxAddRemove(Node... arg0) {
+		super(arg0);
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param spacing
+	 * @param children
+	 */
+	public HBoxAddRemove(double spacing, Node... children) {
+		super(spacing, children);
+		// TODO Auto-generated constructor stub
+	}
+
+}

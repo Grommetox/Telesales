@@ -9,7 +9,6 @@
 <fullyQualifiedTypeName name="javafx.event.EventHandler"/>
 <fullyQualifiedTypeName name="javafx.stage.Modality"/>
 <fullyQualifiedTypeName name="javafx.scene.Node"/>
-<fullyQualifiedTypeName name="javafx.stage.Stage"/>
 <fullyQualifiedTypeName name="javafx.scene.control.Button"/>
 <fullyQualifiedTypeName name="gui.elements.HBoxRoot"/>
 <fullyQualifiedTypeName name="javafx.geometry.Pos"/>
@@ -19,8 +18,6 @@
 <fullyQualifiedTypeName name="gui.elements.TabPaneRoot"/>
 <fullyQualifiedTypeName name="javafx.scene.control.Tab"/>
 <fullyQualifiedTypeName name="javafx.scene.layout.HBox"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
-<fullyQualifiedTypeName name="gui.elements.WarningWindow"/>
 <fullyQualifiedTypeName name="javafx.scene.layout.BorderPane"/>
 <fullyQualifiedTypeName name="javafx.scene.layout.VBox"/>
 <fullyQualifiedTypeName name="javafx.scene.control.TextField"/>
@@ -29,4 +26,7 @@
 <fullyQualifiedTypeName name="gui.elements.TabLoginData"/>
 <fullyQualifiedTypeName name="gui.elements.VBoxLogin"/>
 <fullyQualifiedTypeName name="javafx.geometry.Insets"/>
+<fullyQualifiedTypeName name="gui.elements.WarningWindow"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="javafx.stage.Stage"/>
 </qualifiedTypeNameHistroy>

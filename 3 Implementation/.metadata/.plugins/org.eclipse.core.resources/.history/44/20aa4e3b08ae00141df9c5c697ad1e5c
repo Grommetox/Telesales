@@ -1,0 +1,45 @@
+package gui.elements;
+
+import javafx.scene.Node;
+import javafx.scene.layout.HBox;
+
+/**
+ * HBox that contains Add and remove buttons to add and remove configurations.
+ * @author rasgarbayli
+ * @version 1.0
+ */
+public class HBoxAddRemove extends HBox {
+
+	/**
+	 * preventing default constructor
+	 */
+	public HBoxAddRemove() {
+		this(10);
+	}
+
+	/**
+	 * preventing default constructor
+	 * @param spacing is the spacing between children
+	 */
+	private HBoxAddRemove(double spacing) {
+		super(spacing);
+	}
+
+	/**
+	 * @param arg0
+	 */
+	public HBoxAddRemove(Node... arg0) {
+		super(arg0);
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param spacing
+	 * @param children
+	 */
+	public HBoxAddRemove(double spacing, Node... children) {
+		super(spacing, children);
+		// TODO Auto-generated constructor stub
+	}
+
+}

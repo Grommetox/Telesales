@@ -1,0 +1,30 @@
+/**
+ * 
+ */
+package gui.elements;
+
+import javafx.scene.control.Tab;
+
+/**
+ * @author rasgarbayli
+ *
+ */
+public class TabConfiguration extends Tab {
+
+	/**
+	 * preventing default constructor
+	 */
+	private TabConfiguration() {
+		// Always with text Test Configuration
+		super("Test Configuration");
+	}
+
+	/**
+	 * preventing default constructor
+	 * @param tabName - will not be used
+	 */
+	private TabConfiguration(String tabName) {
+		this();
+	}
+
+}
