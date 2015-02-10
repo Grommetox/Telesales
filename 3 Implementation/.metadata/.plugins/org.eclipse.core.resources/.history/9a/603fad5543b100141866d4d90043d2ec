@@ -1,0 +1,21 @@
+/**
+ * 
+ */
+package gui.elements;
+
+import javafx.scene.control.Accordion;
+
+/**
+ * @author rasgarbayli
+ *
+ */
+public class AccordionConfig extends Accordion {
+
+	/**
+	 * 
+	 */
+	public AccordionConfig() {
+		super();
+	}
+
+}

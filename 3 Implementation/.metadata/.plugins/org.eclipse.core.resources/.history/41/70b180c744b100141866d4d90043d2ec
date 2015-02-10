@@ -1,0 +1,27 @@
+/**
+ * 
+ */
+package gui.elements;
+
+import java.util.LinkedList;
+
+import javafx.scene.control.Accordion;
+
+/**
+ * This is extended version of the accordion element that also contains list of the countries already used in the configuration,
+ * list of the free countries.
+ * @author rasgarbayli
+ * @version 1.0
+ */
+public class AccordionConfig extends Accordion {
+	LinkedList<Countries> freeCountries;
+	LinkedList<Countries> usedCountries;
+	/**
+	 * 
+	 */
+	public AccordionConfig() {
+		super();
+		
+	}
+
+}

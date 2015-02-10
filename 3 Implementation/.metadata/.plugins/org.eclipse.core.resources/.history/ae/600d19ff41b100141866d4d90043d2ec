@@ -21,7 +21,7 @@ public class ButtonAdd extends Button {
 	/**
 	 * prevents default constructor
 	 */
-	private ButtonAdd() {
+	public ButtonAdd() {
 		this("Add");
 	}
 
@@ -46,7 +46,7 @@ public class ButtonAdd extends Button {
 	 * Constructs Add button, to add new configurations into the anchor pane
 	 * @param configs is the reference to the anchor pane that will be new configuration added.
 	 */
-	public ButtonAdd(Accordion configs) {
+	protected ButtonAdd(Accordion configs) {
 		this();
 		this.configs = configs;
 		

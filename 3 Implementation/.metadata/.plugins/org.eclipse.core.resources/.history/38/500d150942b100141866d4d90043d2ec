@@ -21,7 +21,7 @@ public class ButtonAdd extends Button {
 	/**
 	 * prevents default constructor
 	 */
-	private ButtonAdd() {
+	pprivate ButtonAdd() {
 		this("Add");
 	}
 
