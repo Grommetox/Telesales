@@ -1,5 +1,6 @@
 package gui.elements;
 
+import javafx.geometry.Insets;
 import javafx.scene.Node;
 import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
@@ -48,7 +49,7 @@ public class HBoxAddRemove extends HBox {
 	 * @param add
 	 * @param remove
 	 */
-	protected HBoxAddRemove(ButtonAdd add, ButtonRemove remove, Stage primaryStage) {
+	public HBoxAddRemove(ButtonAdd add, ButtonRemove remove, Stage primaryStage) {
 		this(); // with spacing = 10
 		
 		// Add button must not reference to the null
@@ -68,6 +69,7 @@ public class HBoxAddRemove extends HBox {
 		// now it is okay
 		this.getChildren().add(add);
 		this.getChildren().add(remove);
+		this.setPadding(new Insets(5));
 	}
 
 }

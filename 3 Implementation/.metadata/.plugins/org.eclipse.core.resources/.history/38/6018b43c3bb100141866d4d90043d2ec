@@ -1,0 +1,28 @@
+package gui.elements;
+
+import javafx.scene.Node;
+import javafx.scene.control.TitledPane;
+
+/**
+ * Contains the input fields for the each configuration with respect to the country.
+ * @author rasgarbayli
+ * @version 1.0
+ */
+public class TitledPaneConfigurations extends TitledPane {
+
+	/**
+	 * 
+	 */
+	public TitledPaneConfigurations() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param arg0
+	 * @param arg1
+	 */
+	private TitledPaneConfigurations(String title, Node content) {
+		super(title, content);
+	}
+
+}

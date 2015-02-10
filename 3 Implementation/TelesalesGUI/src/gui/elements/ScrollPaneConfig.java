@@ -4,7 +4,10 @@
 package gui.elements;
 
 import javafx.scene.Node;
+import javafx.scene.control.Accordion;
+import javafx.scene.control.Button;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.control.TitledPane;
 import javafx.scene.layout.AnchorPane;
 
 /**
@@ -12,26 +15,29 @@ import javafx.scene.layout.AnchorPane;
  *
  */
 public class ScrollPaneConfig extends ScrollPane {
-	private AnchorPane configurations;
+	private Accordion configurations;
 	/**
-	 * 
+	 * constructs a scroll pane with accordion in it.
 	 */
 	public ScrollPaneConfig() {
-		// TODO Auto-generated constructor stub
+		super();
+		configurations = new Accordion();
+		this.setContent(configurations);
+		this.setFitToWidth(true);
 	}
 
 	/**
+	 * prevents default constructor
 	 * @param arg0
 	 */
-	public ScrollPaneConfig(Node arg0) {
+	private ScrollPaneConfig(Node arg0) {
 		super(arg0);
-		// TODO Auto-generated constructor stub
 	}
 
 	/**
 	 * @return the configurations
 	 */
-	public AnchorPane getConfigurations() {
+	public Accordion getConfigurations() {
 		return configurations;
 	}
 

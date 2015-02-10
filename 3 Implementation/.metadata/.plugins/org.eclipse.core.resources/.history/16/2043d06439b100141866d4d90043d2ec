@@ -1,0 +1,31 @@
+/**
+ * 
+ */
+package gui.elements;
+
+import javafx.scene.Node;
+import javafx.scene.control.TitledPane;
+
+/**
+ * @author rasgarbayli
+ *
+ */
+public class TitledPaneConfigurations extends TitledPane {
+
+	/**
+	 * 
+	 */
+	public TitledPaneConfigurations() {
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @param arg0
+	 * @param arg1
+	 */
+	public TitledPaneConfigurations(String arg0, Node arg1) {
+		super(arg0, arg1);
+		// TODO Auto-generated constructor stub
+	}
+
+}

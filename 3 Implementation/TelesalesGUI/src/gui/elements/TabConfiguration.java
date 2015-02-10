@@ -3,8 +3,8 @@
  */
 package gui.elements;
 
+import javafx.scene.control.Accordion;
 import javafx.scene.control.Tab;
-import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.VBox;
 
 /**
@@ -12,7 +12,7 @@ import javafx.scene.layout.VBox;
  *
  */
 public class TabConfiguration extends Tab {
-	private AnchorPane configurations;
+	private Accordion configurations;
 	
 	/**
 	 * preventing default constructor
@@ -29,7 +29,7 @@ public class TabConfiguration extends Tab {
 		super(tabName);
 	}
 	
-	protected TabConfiguration(ScrollPaneConfig spConfig, HBoxAddRemove hbAddRemove) {
+	public TabConfiguration(ScrollPaneConfig spConfig, HBoxAddRemove hbAddRemove) {
 		this();
 		VBox content = new VBox();
 		content.getChildren().add(spConfig);
@@ -42,7 +42,7 @@ public class TabConfiguration extends Tab {
 	/**
 	 * @return the configurations
 	 */
-	public AnchorPane getConfigurations() {
+	public Accordion getConfigurations() {
 		return configurations;
 	}
 

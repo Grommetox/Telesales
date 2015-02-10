@@ -1,7 +1,12 @@
 package application;
 	
 import gui.elements.BorderPaneRoot;
+import gui.elements.ButtonAdd;
+import gui.elements.ButtonRemove;
+import gui.elements.HBoxAddRemove;
 import gui.elements.HBoxRoot;
+import gui.elements.ScrollPaneConfig;
+import gui.elements.TabConfiguration;
 import gui.elements.TabLoginData;
 import gui.elements.TabPaneRoot;
 import gui.elements.VBoxLogin;
@@ -28,9 +33,9 @@ public class Main extends Application {
 			HBoxRoot hBoxRoot = new HBoxRoot(primaryStage, create, open, save, saveAs, run, exit);
 			
 			TabLoginData login = new TabLoginData(new VBoxLogin());
-			TabLoginData login2 = new TabLoginData(new VBoxLogin());
+			TabConfiguration config = new TabConfiguration(new ScrollPaneConfig(), new HBoxAddRemove(new ButtonAdd(), new ButtonRemove(), primaryStage));
 			
-			BorderPaneRoot root = new BorderPaneRoot(new TabPaneRoot(login2, login, primaryStage), hBoxRoot, primaryStage);
+			BorderPaneRoot root = new BorderPaneRoot(new TabPaneRoot(config, login, primaryStage), hBoxRoot, primaryStage);
 			Scene scene = new Scene(root);
 			scene.getStylesheets().add(getClass().getResource("application.css").toExternalForm());
 			primaryStage.setScene(scene);
