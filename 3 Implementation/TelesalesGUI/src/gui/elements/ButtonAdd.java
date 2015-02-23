@@ -21,7 +21,7 @@ public class ButtonAdd extends Button {
 	/**
 	 * prevents default constructor
 	 */
-	private ButtonAdd() {
+	public ButtonAdd() {
 		this("Add");
 	}
 
